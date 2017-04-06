@@ -68,6 +68,10 @@ open class TabPageViewController: UIPageViewController {
         navigationController?.navigationBar.shadowImage = nil
         navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
     }
+
+    open func refreshTabView(){
+        tabView = configuredTabView()
+    }
 }
 
 
@@ -184,7 +188,7 @@ extension TabPageViewController {
 // MARK: - UIPageViewControllerDataSource
 
 extension TabPageViewController: UIPageViewControllerDataSource {
-    
+
     fileprivate func nextViewController(_ viewController: UIViewController, isAfter: Bool) -> UIViewController? {
 
         guard var index = tabItems.map({$0.viewController}).index(of: viewController) else {
