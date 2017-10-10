@@ -39,11 +39,13 @@ class TabCollectionCell: UICollectionViewCell {
     @IBOutlet fileprivate weak var itemLabel: UILabel!
     @IBOutlet fileprivate weak var currentBarView: UIView!
     @IBOutlet fileprivate weak var currentBarViewHeightConstraint: NSLayoutConstraint!
-
+    @IBOutlet fileprivate weak var itemLabelBackgroundView: UIView!
+             
     override func awakeFromNib() {
         super.awakeFromNib()
 
         currentBarView.isHidden = true
+        itemLabelBackgroundView.layer.cornerRadius = itemLabelBackgroundView.frame.height / 2
     }
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
@@ -86,11 +88,13 @@ extension TabCollectionCell {
     func highlightTitle() {
         itemLabel.textColor = option.currentColor
         itemLabel.font = UIFont.boldSystemFont(ofSize: option.fontSize)
+        itemLabelBackgroundView.backgroundColor = option.currentBackgroundColor
     }
 
     func unHighlightTitle() {
         itemLabel.textColor = option.defaultColor
         itemLabel.font = UIFont.systemFont(ofSize: option.fontSize)
+        itemLabelBackgroundView.backgroundColor = option.defaultBackgroundColor
     }
 }
 
