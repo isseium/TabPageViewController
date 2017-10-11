@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgl-N3-0kZ">
-                        <rect key="frame" x="10" y="12" width="131" height="26"/>
+                        <rect key="frame" x="8" y="12" width="135" height="26"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWJ-4f-Lz7">
@@ -52,13 +52,13 @@
                 <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerX" secondItem="Njo-bq-MVA" secondAttribute="centerX" id="FgI-gv-iu2"/>
                 <constraint firstItem="Sgu-AL-NbW" firstAttribute="top" secondItem="Njo-bq-MVA" secondAttribute="top" priority="750" id="IJz-mm-YfC"/>
                 <constraint firstAttribute="bottom" secondItem="UkM-Ly-JBr" secondAttribute="bottom" id="J0J-D8-GeH"/>
-                <constraint firstAttribute="trailing" secondItem="Zgl-N3-0kZ" secondAttribute="trailing" constant="10" id="LI2-tT-1pn"/>
+                <constraint firstAttribute="trailing" secondItem="Zgl-N3-0kZ" secondAttribute="trailing" constant="8" id="LI2-tT-1pn"/>
                 <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerX" secondItem="Zgl-N3-0kZ" secondAttribute="centerX" id="S6w-wk-uQ3"/>
                 <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerY" secondItem="Zgl-N3-0kZ" secondAttribute="centerY" id="UWz-2j-YEn"/>
                 <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerY" secondItem="Njo-bq-MVA" secondAttribute="centerY" id="Um2-ZX-MDO"/>
                 <constraint firstItem="IWJ-4f-Lz7" firstAttribute="height" secondItem="Zgl-N3-0kZ" secondAttribute="height" constant="-10" id="Y4v-Tr-Gik"/>
                 <constraint firstItem="IWJ-4f-Lz7" firstAttribute="centerY" secondItem="Njo-bq-MVA" secondAttribute="centerY" id="YZv-VV-EQn"/>
-                <constraint firstItem="Zgl-N3-0kZ" firstAttribute="leading" secondItem="Njo-bq-MVA" secondAttribute="leading" constant="10" id="m7X-3K-E0Q"/>
+                <constraint firstItem="Zgl-N3-0kZ" firstAttribute="leading" secondItem="Njo-bq-MVA" secondAttribute="leading" constant="8" id="m7X-3K-E0Q"/>
                 <constraint firstAttribute="trailing" secondItem="Sgu-AL-NbW" secondAttribute="trailing" priority="750" id="mA5-Ef-SrJ"/>
                 <constraint firstItem="UkM-Ly-JBr" firstAttribute="top" secondItem="Sgu-AL-NbW" secondAttribute="bottom" priority="750" id="qYV-Rl-all"/>
             </constraints>
