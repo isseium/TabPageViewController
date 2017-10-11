@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         nc.viewControllers = [tc]
         var option = TabPageOption()
         option.currentColor = UIColor(red: 246/255, green: 175/255, blue: 32/255, alpha: 1.0)
+        option.borderColor = UIColor.red
         option.tabMargin = 30.0
         tc.option = option
         navigationController?.pushViewController(tc, animated: true)
