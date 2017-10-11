@@ -44,7 +44,8 @@ open class TabView: UIView {
     @IBOutlet fileprivate weak var currentBarViewWidthConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var currentBarViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var bottomBarViewHeightConstraint: NSLayoutConstraint!
-
+    @IBOutlet fileprivate weak var borderView: UIView!
+             
     init(isInfinity: Bool, option: TabPageOption) {
        super.init(frame: CGRect.zero)
         self.option = option
@@ -121,6 +122,8 @@ open class TabView: UIView {
         }
 
         bottomBarViewHeightConstraint.constant = 1.0 / UIScreen.main.scale
+
+        borderView.backgroundColor = option.borderColor
     }
 
     required public init?(coder aDecoder: NSCoder) {
